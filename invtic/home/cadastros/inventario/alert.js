@@ -1,0 +1,1 @@
+alert("Todos os itens da página a seguir são obrigatórios")

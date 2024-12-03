@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de itens - ICOM</title>
+</head>
+    <header> Cadastro de itens</header>
+<body>
+        <h1> Formulário de cadastro</h1>
+            <p>Entre abaixo com as informações de Nome do setor, Responsável por o setor e ramal do responsável</p>
+    <section>
+        <fieldset>
+            <legend>Formulário da cadastro:</legend>
+                <form action="processar_formulario.php" method="post">
+                    Marca do item: <input type="text" id="marca" name="marca" required>
+                    <br>
+                    Modelo do item: <input type="text" id="modelo" name="modelo">
+                    <br>
+                    Categoria do item: <input type="text" id="categoria" name="categoria">
+                    <br>
+                    <input type="submit" value="enviar">
+                </form>
+        </fieldset>
+    </section>
+
+    <br>
+
+    <footer>Em desenvolvimento v0.03</footer>
+</body>
+</html>

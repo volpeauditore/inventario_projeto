@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de setores - ICOM</title>
+</head>
+    <header> Cadastro de setores e responsáveis</header>
+<body>
+        <h1> Formulário de cadastro</h1>
+            <p>Entre abaixo com as informações de Nome do setor, Responsável por o setor e ramal do responsável</p>
+    <section>
+        <fieldset>
+            <legend>Formulário:</legend>
+                <form action="processar_formulario.php" method="post">
+                    Nome do setor: <input type="text" id="nome" name="nome" required>
+                    <br>
+                    Nome do responsável por o setor: <input type="text" id="nome_responsavel" name="nome_responsavel">
+                    <br>
+                    Número do ramal: <input type="number" id="ramal_setor" name="ramal_setor">
+                    <br>
+                    Área de administração: <select name="localizacao_pai">
+                        <option value="Administração SESAB">Administração SESAB</option>
+                        <option value="Administração CM" selected>Administração Concessionária</option>
+                      </select>
+                    <br>
+                    Setor de vínculo: <select name="localizacao_filho">
+                        <option value="Corredor Adm. Concessionária">Corredor Adm. Concessionária</option>
+                        <option value="Corredor Adm. SESAB">Corredor Adm. SESAB</option>
+                        <option value="AMBULATORIO" selected>AMBULATORIO</option>
+                        <option value="BIOIMAGEM" selected>BIOIMAGEM</option>
+                        <option value="CRIE" selected>CRIE</option>
+                        <option value="DIRETORIAS" selected>DIRETORIAS</option>
+                        <option value="EMERGÊNCIA" selected>EMERGÊNCIA</option>
+                        <option value="ENFERMARIA 1" selected>ENFERMARIA 1</option>
+                        <option value="ENFERMARIA 2" selected>ENFERMARIA 2</option>
+                        <option value="ENFERMARIA 3" selected>ENFERMARIA 3</option>
+                        <option value="ENFERMARIA PED 1" selected>ENFERMARIA PED 1</option>
+                        <option value="ENFERMARIA PED 2" selected>ENFERMARIA PED 2</option>
+                        <option value="FARMÁCIA" selected>FARMÁCIA</option>
+                        <option value="UTI ADULTO 1" selected>UTI ADULTO 1</option>
+                        <option value="UTI ADULTO 2" selected>UTI ADULTO 2</option>
+                        <option value="UTI PED" selected>UTI PED</option>
+                      </select>
+                    <br>
+                    <input type="submit" value="enviar">
+                </form>
+        </fieldset>
+    </section>
+
+    <br>
+
+    <footer>Em desenvolvimento v0.03</footer>
+</body>
+</html>

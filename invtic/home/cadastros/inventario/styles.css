@@ -1,0 +1,136 @@
+/* Reset básico */
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Estilos do header e nav */
+header {
+    background-color: lightskyblue;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos da área de opções */
+main {
+    padding: 20px;
+}
+
+.opcoes {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: lightblue;
+    border-radius: 4px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda das células */
+    padding: 8px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto */
+}
+
+/* Cor de fundo para as linhas pares */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor clara para linhas pares */
+}
+
+/* Cor de fundo para as linhas ímpares */
+tr:nth-child(odd) {
+    background-color: rgb(144, 200, 236); /* Cor para linhas ímpares */
+}
+
+/* Cor do cabeçalho */
+th {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+}
+
+/* Estilos dos inputs e selects */
+input[type=number],
+input[type=text], input[type=textarea], 
+select {
+    width: calc(100% - 22px); /* Ajuste do width para alinhar com padding */
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: lightgreen;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos do footer */
+footer {
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
