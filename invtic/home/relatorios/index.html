@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Relatórios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/logo/logo.png" alt="logo" class="logo">
+            <h1>Sistema WEB de Inventário de TIC</h1>
+            <ul>
+                <li><a href="../">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="print/relatorios_inventario.php" method="POST">
+            <label for="tipo_relatorio">Escolha o tipo de relatório:</label>
+            <select name="tipo_relatorio" id="tipo_relatorio" required>
+                <option value="">Selecione...</option>
+                <option value="resumo_tipo">Quantidade de Equipamentos por Tipo</option>
+                <option value="itens_setor">Quantidade de itens nas localizações</option>
+                <option value="localizacao">Equipamentos por Localização (Setores)</option>
+                <option value="recentes">Equipamentos Cadastrados Recentemente</option>
+                <option value="status">Equipamentos por Status</option>
+                <option value="fabricante_modelo">Detalhamento de Equipamentos por Fabricante/Modelo</option>
+                <option value="itens_setor">Detalhamento de quantidade de itens por setor</option>
+                <option value="itens_por_localizacao">Tipos de itens por Localização</option>
+            </select>
+            <br><br>
+            <button type="submit">Gerar Relatório</button>
+        </form>
+    </main>
+
+<footer>
+    <p>&copy; 2024 Sistema de Inventário</p>
+</footer>
+</body>
+</html>

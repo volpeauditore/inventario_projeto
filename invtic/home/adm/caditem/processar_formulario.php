@@ -1,6 +1,6 @@
 <?php
 // Conectar ao banco de dados
-$host = 'localhost'; // Endereço do servidor de banco de dados
+$host = '10.1.10.100'; // Endereço do servidor de banco de dados
 $dbname = 'inventario_icom'; // Nome do banco de dados
 $username = 'suporte'; // Nome de usuário do banco de dados
 $password = 'p@$$.cmicom2871'; // Senha do banco de dados

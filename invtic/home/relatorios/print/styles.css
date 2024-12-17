@@ -1,0 +1,36 @@
+.header-container {
+    display: flex;
+    align-items: center; /* Alinha a imagem e as informações verticalmente no centro */
+    margin-bottom: 20px; /* Adiciona um espaço entre o cabeçalho e o restante da página */
+}
+
+.header-icon {
+    width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e as informações */
+}
+
+.header-info {
+    display: flex; /* Exibe as informações em linha */
+    flex-direction: column; /* Mantém as informações em colunas */
+}
+
+.header-info p {
+    margin: 0; /* Remove margens padrão */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

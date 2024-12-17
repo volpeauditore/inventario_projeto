@@ -37,7 +37,7 @@ if (!$result) {
 // Gera o HTML para os setores como links estilizados
 echo "<div style='display: flex; flex-wrap: wrap; gap: 10px;'>"; // Div para agrupar os botões
 while ($row = $result->fetch_assoc()) {
-    echo "<a href='inventario/index.php?setor=" . urlencode($row["nome"]) . "' style='padding: 10px; border-radius: 5px; background-color: #007BFF; color: white; text-decoration: none; display: inline-block;'>";
+    echo "<a href='inventario/inventario.php?setor=" . urlencode($row["nome"]) . "' style='padding: 10px; border-radius: 5px; background-color: #007BFF; color: white; text-decoration: none; display: inline-block;'>";
     echo htmlspecialchars($row["nome"]);
     echo "</a>";
 }

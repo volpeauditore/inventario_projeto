@@ -39,7 +39,7 @@
 
 <header>
         <nav>
-            <img src="assets/logo/logo.png" alt="logo" class="logo">
+            <img src="../assets/logo/logo.png" alt="logo" class="logo">
             <h1>Sistema WEB de Inventário de TIC</h1>
             <ul>
                 <li><a href="../">Sair</a></li>
@@ -47,6 +47,7 @@
         </nav>
     </header>
 
+    <main>
     <h1>Localizações</h1>
     <form>
         <label for="localizacao_pai">Localização Pai:</label>
@@ -54,14 +55,7 @@
             <option value="">Selecione uma localização</option>
             <?php
             // Conectar ao banco de dados
-            $host = 'localhost';
-            $dbname = 'inventario_icom';
-            $username = 'suporte';
-            $password = 'p@$$.cmicom2871';
-            $conn = new mysqli($host, $username, $password, $dbname);
-            if ($conn->connect_error) {
-                die("Conexão falhou: " . $conn->connect_error);
-            }
+            include ("../conexao.php");
 
             // Obter localizações pai
             $sql = "SELECT DISTINCT localizacao_pai FROM setor";
@@ -83,9 +77,10 @@
             <option value="">Selecione uma sublocalização</option>
         </div>
     </form>
+        </main>
 
     <footer>
-        Inventário de TIC (InvTIC)
+        2024 - Inventário de TIC (InvTIC)
     </footer>
 
 </body>

@@ -1,26 +1,21 @@
 /* Reset básico */
 body {
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
 }
 
-/* Estilos do header e nav */
+/* Header */
 header {
-    background-color: lightskyblue;
-    padding: 10px 20px;
-    text-align: left;
-}
-
-h2 {
-    text-align: center;
+    background: linear-gradient(135deg, #50b3ff, #0072ff);
+    padding: 20px;
+    color: white;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .logo {
@@ -28,34 +23,34 @@ nav {
 }
 
 nav h1 {
-    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
-nav ul li {
-    margin-left: 20px; /* Espaçamento entre os itens do menu */
-}
-
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #000;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Estilos da área de opções */
+/* Área de Opções */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .opcoes {
@@ -118,6 +113,11 @@ input[type=submit] {
     border-radius: 4px;
     margin: 10px 0;
     cursor: pointer;
+}
+
+div {
+    justify-content: space-between;
+    align-items: center;
 }
 
 input[type=submit]:hover {

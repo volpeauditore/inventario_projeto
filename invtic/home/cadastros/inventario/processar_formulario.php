@@ -8,7 +8,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Conectar ao banco de dados
-$host = 'localhost'; // Endereço do servidor de banco de dados
+$host = '10.1.10.100'; // Endereço do servidor de banco de dados
 $dbname = 'inventario_icom'; // Nome do banco de dados
 $username = 'suporte'; // Nome de usuário do banco de dados
 $password = 'p@$$.cmicom2871'; // Senha do banco de dados
@@ -32,6 +32,13 @@ $mac_ramal = htmlspecialchars($_POST['mac_ramal'], ENT_QUOTES, 'UTF-8');
 $patrimonio = isset($_POST['patrimonio']) && $_POST['patrimonio'] !== '' ? (int) $_POST['patrimonio'] : null;
 $quantidade = isset($_POST['quantidade']) ? (int) $_POST['quantidade'] : 0;
 $observacoes = htmlspecialchars($_POST['observacoes'], ENT_QUOTES, 'UTF-8');
+
+// Verifica se o checkbox "Não identificado" foi marcado
+if (isset($_POST['n/a']) && $_POST['n/a'] === 'n/a') {
+    $patrimonio = '0000';  // Se o checkbox foi marcado, define o patrimônio como '0000'
+} else {
+    $patrimonio = isset($_POST['patrimonio']) && $_POST['patrimonio'] !== '' ? (int) $_POST['patrimonio'] : null;
+}
 
 // Captura a data e hora atual
 $data_inventario = date('Y-m-d H:i:s');

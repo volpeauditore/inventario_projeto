@@ -64,7 +64,7 @@
 
 <header>
     <nav>
-        <img src="assets/logo/logo.png" class="logo" alt="Logo">
+        <img src="../../assets/logo/logo.png" class="logo" alt="Logo">
         <h1>Formulário para Inventário</h1>
         <ul>
             <li><a href="../home.php">Voltar</a></li>
@@ -88,6 +88,7 @@
             <option value="monitor">Monitor</option>
             <option value="notebook">Notebook</option>
             <option value="telefone">Telefone</option>
+            <option value="tablet">Tablet</option>
             <option value="impressora">Impressora</option>
             <option value="scanner">Scanner</option>
             <option value="estabilizador">Estabilizador</option>
@@ -99,6 +100,8 @@
         <label for="setor">Nome do setor:</label>
         <input type="text" id="setor" name="setor" value="<?php echo $setor; ?>" required readonly>
         <br><br>
+
+
 
         <label for="marca">Selecione a marca do equipamento:</label>
         <select name="marca" id="marca" required>
@@ -126,8 +129,17 @@
             <br><br>
         </div>
 
-        <label for="patrimonio">Patrimônio:</label>
-        <input type="number" id="patrimonio" name="patrimonio">
+        <br><br>
+
+        <div id="pat_fields">
+            <label for="patrimonio">Patrimônio:</label>
+            <input type="number" id="patrimonio" name="patrimonio">
+            <br><br>
+
+            <input type="checkbox" id="n/a" name="n/a" value="n/a">
+            <label for="n/a">Não identificado</label><br>
+        </div>
+
         <br><br>
 
         <label for="quantidade">Quantidade:</label>

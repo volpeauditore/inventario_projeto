@@ -1,21 +1,21 @@
 /* Reset básico */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
 }
 
-/* Estilos do header e nav */
+/* Header */
 header {
-    background-color: lightskyblue;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao header */
+    background: linear-gradient(135deg, #50b3ff, #0072ff);
+    padding: 20px;
+    color: white;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .logo {
@@ -23,34 +23,34 @@ nav {
 }
 
 nav h1 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-size: 24px; /* Ajuste o tamanho do título */
+    font-size: 24px;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
-nav ul li {
-    margin-left: 20px; /* Espaçamento entre os itens do menu */
-}
-
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px; /* Adiciona bordas arredondadas aos links */
-    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse */
-    color: #000; /* Muda a cor do texto ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Área de Opções */
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {

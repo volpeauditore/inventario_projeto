@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de TIC - Cadastro de itens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+    <body>
+    <header>
+        <nav>
+            <img src="https://vnx.partners/wp-content/uploads/2024/03/DALL%C2%B7E-2024-03-19-13.22.30-Redesign-the-cover-image-for-an-article-on-_Digital-Threats_-to-include-a-young-adult-male-model-maintaining-the-positive-and-calming-style-with-soot.webp" alt="logo" class="logo">
+            <h1>INVTIC - Cadastro de setor</h1>
+            <ul>
+            <!-- <li><a href="../relatorios/">Relatórios gerais</a></li> -->
+                <li><a href="../">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="options-container">
+
+        <h1> Formulário de cadastro</h1>
+            <p>Entre abaixo com as informações de marca do item, modelo do item e o tipo do equipamento</p>
+
+            <main class="main">
+                <div class="options-container">
+                    <legend>Formulário da cadastro:</legend>
+                        <form action="processar_formulario.php" method="post">
+                            <label>Marca do item:</label> <input type="text" id="marca" name="marca" required>
+                            <br><br>
+                            <label>Modelo do item:</label> <input type="text" id="modelo" name="modelo">
+                            <br><br>
+                            <label for="categoria">Selecione o tipo de equipamento:</label>
+                            <select name="categoria" id="categoria" required>
+                                <option value="">Selecione um tipo</option>
+                                <option value="computador">Computador</option>
+                                <option value="monitor">Monitor</option>
+                                <option value="notebook">Notebook</option>
+                                <option value="telefone">Telefone</option>
+                                <option value="tablet">Tablet</option>
+                                <option value="impressora">Impressora</option>
+                                <option value="scanner">Scanner</option>
+                                <option value="estabilizador">Estabilizador</option>
+                                <option value="filtro de linha">Filtro de Linha</option>
+                                <!-- Adicione outros tipos conforme necessário -->
+                            </select>
+                            <br><br>
+                            <input type="submit" value="enviar">
+                        </form>
+                </div>
+            </main>
+
+</body>
+
+<!--<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Inventário de ativos de TIC. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Alberto Nascimento - Engenheiro de computação e desenvolvedor de softwares WEB</p>
+    </div>
+</footer>
+
+    Script para alerta e limpar formulário -->
+    <script>
+        $(document).ready(function() {
+            $('#cadastro-form').on('submit', function(event) {
+                event.preventDefault(); // Evita o comportamento padrão
+                alert('Formulário enviado com sucesso!');
+                this.reset(); // Limpa o formulário
+            });
+        });
+    </script>
+
+</html>
