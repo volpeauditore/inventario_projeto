@@ -1,12 +1,9 @@
 <?php
-// Conectar ao banco de dados
-$host = '10.1.10.100';
-$dbname = 'inventario_icom';
-$username = 'suporte';
-$password = 'p@$$.cmicom2871';
-$conn = new mysqli($host, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
+include('../../../conexao.php');
+
+// Verificar a conexão com o banco de dados
+if (!$conn) {
+    die('Erro na conexão: ' . mysqli_connect_error());
 }
 
 // Receber a localização pai via POST

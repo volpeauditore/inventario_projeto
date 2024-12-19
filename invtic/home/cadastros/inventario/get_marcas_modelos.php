@@ -1,14 +1,13 @@
 <?php 
-// Configurações de conexão com o banco de dados
-$host = '10.1.10.100';
-$dbname = 'inventario_icom';
-$username = 'suporte';
-$password = 'p@$$.cmicom2871';
+// Conectar ao banco de dados
+include '../../conexao.php'; // Inclui a conexão
 
-// Conecta ao banco de dados
-$conn = new mysqli($host, $username, $password, $dbname);
+// Verifica se houve um erro na conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 
-// Verifica a conexão
+// Verifica se houve um erro na conexão
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }

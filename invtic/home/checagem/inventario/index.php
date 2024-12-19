@@ -162,9 +162,14 @@
                 </tbody>
             </table>
         <br>
+
+        <button type="submit">Checar Inventário</button>
+
+        <br><br>
+
         </form>
         </div>
-        <button type="submit">Checar Inventário</button>
+        
         <br>
         <button onclick="window.print();">Imprimir</button>
 

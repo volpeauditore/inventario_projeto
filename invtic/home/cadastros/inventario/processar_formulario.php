@@ -8,13 +8,12 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Conectar ao banco de dados
-$host = '10.1.10.100'; // Endereço do servidor de banco de dados
-$dbname = 'inventario_icom'; // Nome do banco de dados
-$username = 'suporte'; // Nome de usuário do banco de dados
-$password = 'p@$$.cmicom2871'; // Senha do banco de dados
+include '../../conexao.php'; // Inclui a conexão
 
-// Cria uma conexão com o banco de dados
-$conn = new mysqli($host, $username, $password, $dbname);
+// Verifica se houve um erro na conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 
 // Verifica se houve um erro na conexão
 if ($conn->connect_error) {

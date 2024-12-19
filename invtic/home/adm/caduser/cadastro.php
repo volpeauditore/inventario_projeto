@@ -3,7 +3,7 @@
 session_start();
 
 // Conectar ao banco de dados
-include('conexao.php');
+include('../../../conexao.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];

@@ -8,15 +8,13 @@
 <body>
     <h1>Detalhes do Setor</h1>
     <?php
-    // Conectar ao banco de dados
-    $host = 'localhost';
-    $dbname = 'inventario_icom';
-    $username = 'suporte';
-    $password = 'p@$$.cmicom2871';
-    $conn = new mysqli($host, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        die("Conexão falhou: " . $conn->connect_error);
-    }
+// Conectar ao banco de dados
+include '../../conexao.php'; // Inclui a conexão
+
+// Verifica se houve um erro na conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
 
     // Obter o ID do setor via GET
     $id = $_GET['id'];

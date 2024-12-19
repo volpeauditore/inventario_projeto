@@ -1,7 +1,7 @@
 <?php
 // conexao.php
 
-$servername = "localhost";
+$servername = "10.1.10.100";
 $username = "suporte";
 $password = "p@$$.cmicom2871";
 $dbname = "inventario_icom";

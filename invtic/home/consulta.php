@@ -2,10 +2,7 @@
 header('Content-Type: application/json');
 
 // Conectar ao banco de dados
-$host = 'localhost';
-$dbname = 'inventario_icom';
-$username = 'suporte';
-$password = 'p@$$.cmicom2871';
+include('conexao.php');
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
